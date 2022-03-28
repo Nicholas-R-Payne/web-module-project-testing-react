@@ -9,12 +9,12 @@ const testEpisode = {
     image: 'http://static.tvmaze.com/uploads/images/original_untouched/200/501942.jpg',
     season: 1,
     number: 1,
-    summary: '',
+    summary: 'test summary',
     runtime: 1
 }
 
-test("renders without error", () => { });
+test("renders without error", () => {
     render(<Episode episode={testEpisode} />)
+});
 test("renders the summary test passed as prop", () => { });
-
 test("renders default image when image is not defined", () => { });
